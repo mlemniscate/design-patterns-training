@@ -10,12 +10,18 @@ public class Employee
     {
         Id = id;
         Name = name;
-        Age = age;
+        SetAge(age);
+    }
+
+    private void SetAge(int age)
+    {
         if (new OldEmployeeSpecification()
             .Or(new YoungEmployeeSpecification())
-            .IsSatisfiedBy(this))
+            .IsSatisfiedBy(age))
         {
             throw new Exception("Employee age is not good for being our employee");
         }
+
+        Age = age;
     }
 }

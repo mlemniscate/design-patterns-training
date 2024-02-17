@@ -2,11 +2,11 @@
 
 namespace Specification.Models;
 
-public class OldEmployeeSpecification : Specification<Employee>
+public class OldEmployeeSpecification : Specification<int>
 {
 
-    public override bool IsSatisfiedBy(Employee employee)
+    public override bool IsSatisfiedBy(int age)
     {
-        return employee.Age > 50;
+        return age > 50;
     }
 }
