@@ -7,7 +7,7 @@
     <ProjectGuid>{4F6B862D-41D0-4AF1-8D2B-20029036D253}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>DesingPatternBuilder</RootNamespace>
-    <AssemblyName>DesingPatternBuilder</AssemblyName>
+    <AssemblyName>DesignPatternBuilder</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -51,5 +51,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
